@@ -3,11 +3,11 @@ const cors = require("cors");
 
 const app = express();
 
-var corsOptions = {
-    origin: "http://localhost:8081"
-};
+// var corsOptions = {
+//     origin: "http://localhost:8081"
+// };
 
-app.use(cors(corsOptions));
+app.use(cors());
 
 // parse requests of content-type - application/json
 app.use(express.json());
@@ -30,7 +30,7 @@ app.get("/", (req, res) => {
 });
 
 // set port, listen for requests
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8081;
 
 require("./app/routes/customer.routes")(app);
 require("./app/routes/auth.routes")(app);
