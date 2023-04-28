@@ -32,9 +32,9 @@ app.get("/", (req, res) => {
 // set port, listen for requests
 const PORT = process.env.PORT || 8081;
 
-require("./app/routes/customer.routes")(app);
-require("./app/routes/auth.routes")(app);
-require("./app/routes/contest.routes")(app);
+// require("./app/routes/customer.routes")(app);
+// require("./app/routes/auth.routes")(app);
+// require("./app/routes/contest.routes")(app);
 
 
 app.listen(PORT, () => {
