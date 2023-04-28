@@ -1,5 +1,5 @@
 module.exports = {
-    HOST: "localhost",
+    HOST: "fixguru.vercel.app",
     USER: "root",
     PASSWORD: "",
     DB: "fixguru",
